@@ -1,6 +1,7 @@
 // App.js
 import React, { useState } from "react";
 import Gameboard from "./Gameboard";
+import Marble from "./Marble";
 
 function App() {
   const [state, setState] = useState({
@@ -8,7 +9,9 @@ function App() {
     currentPlayer: 1,
   });
 
-  return <Gameboard state={state} setState={setState} />;
+  return (<>
+  <Gameboard state={state} setState={setState} />
+  </>)
 }
 
 export default App;

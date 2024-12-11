@@ -108,6 +108,16 @@
     font-size: 18px;
   }
 }
+
+/* Container for the tips */
+.helpdesk {
+background-color: white;
+margin-top: 20px;
+border-radius: 20px;
+background: #000;
+display: flex;
+justify-content: space-between;
+}
 /* Container for the hint */
 .hint-container {
   grid-column: 1 / span 3; /* Spans across the entire width of the board */

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "./AI_hint.css";
 
+
 const AI_hint = ({ state, setHighlightedPit, hint, setHint }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const fetchHint = async () => {
     setIsLoading(true);
 
-    const apiKey =
-      import.meta.env.VITE_OPENAI_API_KEY || "your_openai_api_key_here";
+    const apiKey = import.meta.env.VITE_OPENAI_API_KEY || "your_openai_api_key_here";
     if (!apiKey) {
       console.error("API key is missing! Check your configuration.");
       setHint("Sorry, the service is unavailable right now.");
